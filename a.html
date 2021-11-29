@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <div class="container">
+    <div id="app"></div>
+  </div>
+    <script>
+      // Jazz'd up v2 is in https://codepen.io/ronniechong/pen/PzVKOo
+
+const items = [
+  'Playing',
+  'with a game',
+  'Codepen',
+  'is so much',
+  'funz!'
+]
+const app = document.getElementById('app')
+let count = 0
+let index = 0
+let typingEffect = () => {
+  let text = items[index]
+  if (count < text.length) {
+    setTimeout(() => {
+      app.innerHTML += text[count]
+      count++
+      typingEffect()
+    }, Math.floor(Math.random(10) * 100))
+  } else {
+    count = 0;
+    index = (index + 1 < items.length) ? index + 1 : 0
+    setTimeout(() => {
+      app.innerHTML = ''
+      typingEffect()
+    }, 1500)
+  }
+}
+
+typingEffect()
+    </script>
+</body>
+</html>

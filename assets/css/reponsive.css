@@ -1,0 +1,597 @@
+/* PC */
+@media(min-width: 64em){
+    .menu-icon-mobile{
+        display: none;
+    }
+    .home-section-footer-mobi{
+        display: none;
+    }
+
+    .customize-section-footer-btn{
+        display: none;
+    }
+
+    .pricing-section-container-mobile{
+        display: none;
+    }
+
+    .model{
+        display: none;
+    }
+}
+
+
+
+/* Tablet+Mobile */
+@media (max-width: 63.9375em){
+    .header-container{
+        display: none;
+    }
+
+    .mobi-icon{
+        font-size: 32px;
+        color: #707387;
+    }
+
+    .host-performance-section-footer{
+        flex-wrap: wrap;
+    }
+
+    .pricing-section{
+        height: 100%;
+    }
+
+    .pricing-section-container{
+        display: none;
+    }
+
+    
+
+    .pr{
+        text-align: center;
+        width: 100%;
+    }
+
+    .pricing-section-co-01-container{
+        margin-top: 32px;
+        padding-bottom: 16px;
+    }
+
+    .pricing-section-co-01-container:last-child{
+        padding-bottom: 64px;
+    }
+
+    .pricing-section-container-same-02{
+        font-size: 42px;
+        color: #222955;
+    }
+
+    .pricing-section-container-same-03{
+        color: #3f86ff;
+    }
+
+    .pricing-section-container-same-04 {
+        padding: 16px;
+        width: 80%;
+    }
+
+    .pricing-section-container-row{
+        justify-content: space-between;
+    }
+    
+    .pricing-section-container-cell01{
+        width: 100%;
+        padding-right: 16px;
+        font-weight: 400;
+    }
+
+    .widthrow{
+        border-right: none;
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    .pricing-section-container-cell04{
+        font-weight: 400;
+    }
+
+    .pricing-section-container-footer{
+        font-size: 24px;
+    }
+
+    .psc2{
+        color: #fff;
+    }
+
+    .footer{
+        margin-top: 0;
+    }
+
+    .footer-team{
+        padding-top: 46px;
+    }
+
+    .model-menu{
+        background-color: #fff;
+        height: 100%;
+    }
+
+    
+    .moder-menu-icon{
+        color: #cccfe4;
+        font-size: 32px;
+    }
+
+    .model-menu{
+        padding-left: 16px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    @keyframes modalFadeIn {
+        from{
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .moder-menu-mb-tl,
+    .model-menu-login-signup{
+        text-decoration: none;
+        list-style-type: none;
+        padding: 16px 0;
+    }
+
+    .model-menu-login-signup li,
+    .moder-menu-mb-tl li{
+        padding: 16px;
+    }
+
+    .model-mobi{
+        padding-left: 54px;
+    }
+
+    .menu-icon-mobile{
+        
+        border: none;
+        background-color: #fff;
+    }
+}
+
+/* Tablet */
+@media (max-width: 63.9375em) and (min-width: 46.25em){
+    .home-section-footer-mobi{
+        display: none;
+    }
+
+    .customize-section-footer-btn{
+        display: none;
+    }
+
+    .padding-32{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .menu{
+        justify-content: flex-start;
+    }
+
+    .menu-icon-mobile{
+        margin-left: 32px;
+        
+    }
+
+    .menu-icon{
+        margin-left: 100px;
+    }
+
+    .home-section-header-01{
+        width: 85%;
+    }
+    .home-section{
+        margin-left: 0;
+    }
+
+    .tools-section-01{
+        width: 65%;
+        padding-top: 0;
+    }
+
+    .home-section-01{
+        width: 69%;
+        padding-top: 0;
+    }
+
+    .home-section-02{
+        width: 100%;
+    }
+
+    .home-section-footer {
+        padding: 18px 88px;
+        width: 100%;
+    }
+
+    .customize-section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .customize-section-02 {
+        
+        padding-top: 0;
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .home-section-02 {
+        margin-left: 18px;
+    }
+
+    .abtesting-section{
+        margin-right: 0;
+    }
+
+    .abtesting-section-01{
+        padding-left: 0;
+        background: none;
+    }
+
+    .abtesting-section-02 {
+        padding-top: 0;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 0;
+    }
+    
+
+    .tracking-section-01 {
+        width: 100%;
+    }
+
+    .tracking-section-img {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 60px;
+    }
+
+    .template-section {
+        padding-top: 100px;
+    }
+
+    .template-section-01 {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .template-section-02 {
+        padding-top: 0;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .domain-section-header-02 {
+        WIDTH: 70%;
+    }   
+    
+    .domain-section-container-team{
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .domain-section-container-team:last-child{
+        margin: auto;
+    }
+
+    .contact-section-contact-email{
+        padding: 6px 16px;
+        margin-left: -50px
+    }
+
+    .contact-section-header-01 {
+        font-size: 28px;
+    }
+
+    .host-performance-section-container{
+        width: 100%;
+    }
+
+    .host-performance-section-header-02{
+        padding: 0 92px;
+    }
+
+    .host-performance-left{
+        padding-left: 46px;
+    }
+
+    .host-performance-section-footer{
+        flex-wrap: nowrap;
+        padding: 0 46px;
+    }
+
+    .host-performance-section-footer-03{
+        padding: 32px 18px;
+    }
+
+    .pricing-section-header{
+        width: 100%;
+    }
+
+    .pricing-section-co-01{
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    .pricing-section-co-choose {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .pricing-section-co-choose0-01,
+    .pricing-section-co-choose-02{
+        width: 50%;
+        text-align: center;
+        margin-right: 6px;
+    }
+
+    .pricing-section-container-cell04,
+    .pricing-section-container-cell02{
+        text-align: center;
+    }
+
+    .footer-container{
+        width: 70%;
+        margin: auto;
+        padding-top: 32px;
+    }
+
+    .model-menu{
+        width: 30%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    .mt-32{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    .mt-16{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .menu{
+        justify-content: flex-start;
+    }
+
+    .menu-icon{
+        margin-left: 46px;
+    }
+
+    .home-section{
+        
+        flex-direction: column;
+    }
+
+    .home-section-01{
+        width: 100%;
+    }
+
+    .home-section-header-01{
+        width: 50%;
+    }
+    
+    .home-section-footer-mobi{
+        width: 100%;
+        padding: 18px 139px;
+
+    }
+    .home-section-footer{
+        display: none;
+    }
+
+    .home-section-02-img{
+        padding-left: 0;
+        margin-top: 16px;
+    }
+    
+    .customize-section{
+        flex-direction: column-reverse;
+    }
+
+    .padding-16{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .customize-section-02{
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .customize-section-footer{
+        display: none;
+    }
+
+    .tools-section{
+        flex-direction: column;
+    }
+    .tools-section-01{
+        width: 100%;
+        text-align: center;
+    }
+
+    .tools-section-footer{
+        display: none;
+    }
+    
+    .abtesting-section{
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+
+    .abtesting-section-01{
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+
+    .abtesting-section-02{
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .tracking-section{
+        flex-direction: column;
+    }
+    .tracking-section-01{
+        width: 100%;
+        text-align: center;
+    }
+
+    .tracking-section-img{
+        padding-left: 0;
+    }
+    .home-section-02{
+        margin-top: 16px;
+    }
+
+    .template-section{
+        flex-direction: column-reverse;
+    }
+    
+    .template-section-02{
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .template-section-01{
+        padding-left: 0;
+        margin-top: 16px;
+    }
+
+    .template-section-footer{
+        display: none;
+    }
+
+    .domain-section-header-01{
+        text-align: center;
+    }
+
+    .domain-section-container{
+        flex-direction: column;
+    }
+
+    .domain-section-container-team{
+        width: 100%;
+    }
+    .contact-section-img{
+        display: none;
+    }
+
+    .contact-section-container{
+        flex-direction: column;
+    }
+    .contact-section-container-02{
+        width: 100%;
+        flex-direction: column;
+        height: 270px;
+    }
+    
+    .abc{
+        width: 100%;
+        clip-path: polygon(0 0,100% 25%,100% 0);
+        
+    }
+
+    .contact-section-container-01{
+        text-align: center;
+        height: 331px;
+    }
+
+    .contact-section-header-01{
+        padding-top: 64px;
+    }
+
+    .contact-section-contact {
+        /* height: 100%; */
+        margin-top: -96px;
+    }
+
+    .contact-section-contact-email {
+        padding: 20px 65px;
+        margin-left: -9px;
+    }
+
+    .host-performance-section-container{
+        width: 100%;
+    }
+
+    .host-performance{
+        width: 48%;
+        margin: 4px 4px;
+    }
+
+    .host-performance-section-footer-02{
+        margin-left: 0;
+    }
+
+    .host-performance-section-footer-03{
+        
+    }
+
+    .host-performance-section-footer-04{
+        margin-left: 0;
+    }
+
+    .pricing-section-header{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .footer-footer{
+        flex-direction: column-reverse;
+        padding: 32px 0;
+        font-size: 18px;
+    }
+
+    .footer-footer-01{
+        margin-top: 24px;
+    }
+
+    .footer-icon{
+        padding-left: 16px;
+    }
+
+    .pricing-section-co-01{
+        margin-top: 32px;
+    }
+
+    .pricing-section-co-choose0-01{
+        padding: 8px 58px;
+    }
+    
+    .pricing-section-co-choose-02{
+        padding: 8px 65px;
+    }
+
+    .widthrow{
+        padding: 30px;
+    }
+
+    .model-menu{
+        width: 50%;
+        
+    }
+}

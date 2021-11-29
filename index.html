@@ -9,19 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reponsive.css">
 </head>
 <body>
     <div class="main">
-        <div class="header">
-            <div class="menu mt-120">
+        <div class="header ">
+            <div class="menu mt-120 mt-32 padding-32">
+                <button class="menu-icon-mobile js-open-menu">
+                    <i class="fas fa-bars mobi-icon"></i>
+                </button>
                 <img src="	https://landerlab.io/static%2Fimg%2F25295995eafb3ce3c66c.svg" class="menu-icon" alt="">
                 <div class="header-container">
                     <ul class="menu-container">
-                    <li><a href="" class="a-text">Features</a></li>
-                    <li><a href="" class="a-text">Templates</a></li>
-                    <li><a href="" class="a-text">Pricing</a></li>
+                    <li><a href="#features" class="a-text">Features</a></li>
+                    <li><a href="#templates" class="a-text">Templates</a></li>
+                    <li><a href="#pricing" class="a-text">Pricing</a></li>
                 </ul>
                 <ul class="menu-login-signup">
                     <li><a href="" class="a-text login-sign">Login</a></li>
@@ -33,12 +38,15 @@
         </div>
 
         <div class="container">
-            <div class="home-section">
+            <div class="home-section mt-16 padding-32">
                 <div class="home-section-01">
                     <div class="home-section-header-01">
-                        Build <span class="home-section-header-a">
-                            BEAUTIFUL
-                        </span>
+                        Build <div class='console-container'>
+                            <span id='text'></span>
+                            <div class='console-underscore' id='console'>
+
+                            </div>
+                        </div>
                     </div>
                     <p class="home-section-header-02">
                         Landing Pages
@@ -54,11 +62,17 @@
                 <div class="home-section-02">
                     <img src="./assets/img/lify.png" class="home-section-02-img" alt="">
                 </div>
+                <div class="home-section-footer-mobi">
+                    <a href="" class="home-section-footer-a">Start Free Trial</a>
+                </div>
             </div>
 
-            <div class="customize-section mt-120">
+            <div class="customize-section mt-120 padding-16 padding-32" id="features">
                 <div class="customize-section-01">
                     <img src="./assets/img/create.png" class="customize-section-img" alt="">
+                    <p class="customize-section-footer-btn">
+                        <a href="" class="customize-section-footer-a">Learn More ></a>
+                    </p>
                 </div>
                 <div class="customize-section-02">
                     <span class="customize-section-header">
@@ -76,7 +90,7 @@
                 </div>
             </div>
 
-            <div class="tools-section mt-120">
+            <div class="tools-section mt-120 padding-16 padding-32">
                 <div class="tools-section-01">
                     <div class="tools-section-header-01">
                         Lead Collection & Management
@@ -93,12 +107,18 @@
                 </div>
                 <div class="home-section-02">
                     <img src="./assets/img/lead.png" class="home-section-02-img" alt="">
+                    <p class="customize-section-footer-btn">
+                        <a href="" class="customize-section-footer-a">Learn More ></a>
+                    </p>
                 </div>
             </div>
 
-            <div class="abtesting-section ">
+            <div class="abtesting-section padding-16 padding-32">
                 <div class="abtesting-section-01">
                     <img src="./assets/img/ab.png" class="customize-section-img" alt="">
+                    <p class="customize-section-footer-btn">
+                        <a href="" class="customize-section-footer-a">Learn More ></a>
+                    </p>
                 </div>
                 <div class="abtesting-section-02">
                     <span class="abtesting-section-header">
@@ -117,7 +137,7 @@
                 </div>
             </div>
 
-            <div class="tracking-section">
+            <div class="tracking-section padding-16 padding-32">
                 <div class="tracking-section-01">
                     <div class="tools-section-header-01">
                         Track Your Landing Page Performance
@@ -134,12 +154,18 @@
                 </div>
                 <div class="home-section-02">
                     <img src="./assets/img/track.png" class="tracking-section-img" alt="">
+                    <p class="customize-section-footer-btn">
+                        <a href="" class="customize-section-footer-a">Learn More ></a>
+                    </p>
                 </div>
             </div>
 
-            <div class="template-section ">
+            <div class="template-section padding-16 padding-32" id="templates">
                 <div class="template-section-01">
                     <img src="./assets/img/ready.png" class="customize-section-img" alt="">
+                    <p class="customize-section-footer-btn">
+                        <a href="" class="customize-section-footer-a">Learn More ></a>
+                    </p>
                 </div>
                 <div class="template-section-02">
                     <span class="template-section-header">
@@ -166,7 +192,7 @@
                         Mange your domains, subdomains and DNS records directly from LanderLab without the need to login to CloudFlare
                     </div>
                 </div>
-                <div class="domain-section-container mt-120">
+                <div class="domain-section-container mt-120 padding-16 padding-32">
                     <div class="domain-section-container-team">
                         <img src="https://landerlab.io/static%2Fimg%2Fda7e15bc65622dd77d59.svg" class="pa-16 domain-section-container-img" alt="">
                         <div class="domain-section-container-header pa-16">Domains</div>
@@ -192,7 +218,7 @@
             </div>
 
             <div class="contact-section">
-                <div class="contact-section-same mt-120">
+                <div class="contact-section-same mt-120 padding-16 padding-32">
                     <div class="contact-section-container">
                         <img src="https://landerlab.io/static%2Fimg%2Fd86534fd98d69a4b6e64.svg" class="contact-section-img" alt="">
                         <div class="contact-section-container-01">
@@ -215,13 +241,937 @@
             </div>
 
             <div class="host-performance-section">
-                
+                <div class="host-performance-section-container padding-16 padding-32">
+                    <div class="host-performance-section-header-01">
+                        Cloud Hosting & Fast Loading
+                    </div>
+                    <div class="host-performance-section-header-02">
+                        All landing pages are published in a cloud multi-reagion hosting solution, 
+                        for 100% guaranteed uptime and optimal loading speed all over the world
+                    </div>
+                    <img src="https://landerlab.io/static%2Fimg%2F92ceb7f45f9ac0b94949.svg" class="host-performance-section-img" alt="">
+                    <div class="host-performance-left">
+                      Gtmetrix  
+                    </div>
+                    <div class="host-performance-section-footer">                       
+                        <div class="host-performance host-performance-section-footer-01">
+                            <div class="host-performance-footer-header-01">Performance</div>
+                            <div class="host-performance-footer-header-same">99%</div>
+                        </div>
+                        <div class="host-performance host-performance-section-footer-02">
+                            <div class="host-performance-footer-header-01">Structure</div>
+                            <div class="host-performance-footer-header-same">83%</div>
+                        </div>
+                        <div class="host-performance host-performance-section-footer-03">
+                            <div class="host-performance-footer-header-01">LCP</div>
+                            <div class="host-performance-footer-header-same">877ms</div>
+                        </div>
+                        <div class="host-performance host-performance-section-footer-04">
+                            <div class="host-performance-footer-header-01">TBT</div>
+                            <div class="host-performance-footer-header-same">2ms</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pricing-section" id="pricing">
+                <div class="pricing-section-header padding-16 padding-32">
+                    Choose Your Perfect Plan
+                </div>
+                <div class="pricing-section-container mt-120">
+                    <div class="pricing-section-container-con">
+                        <div class="pr pricing-section-container-same">
+                            <div class="pricing-section-co-01">
+                                <div class="pricing-section-co-choose">
+                                    <span class="pricing-section-co-choose0-01">Monthly</span>
+                                    <span class="pricing-section-co-choose-02">Yearly</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr pricing-section-container-same">
+                            <div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $69
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>
+                        </div>
+                        <div class="pr pricing-section-container-same pr02">
+                            <div class="pricing-section-container-same-01 psc2">
+                                Pro
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $89
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs01">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>
+                        </div>
+                        <div class="pr pricing-section-container-same">
+                            <div class="pricing-section-container-same-01 psc3">
+                                Master
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $149
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pricing-section-container-con02">
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Published Landers
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">10</div>
+                            <div class="widthrow pricing-section-container-cell02">50</div>
+                            <div class="widthrow pricing-section-container-cell02">200</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Capturing Widgets
+                                <sup class="i-table">i</sup>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">1</div>
+                            <div class="widthrow pricing-section-container-cell02">5</div>
+                            <div class="widthrow pricing-section-container-cell02">20</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                A/B Testing
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">5</div>
+                            <div class="widthrow pricing-section-container-cell02">5</div>
+                            <div class="widthrow pricing-section-container-cell02">20</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Unlimited Traffic & Leads
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Management
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Templates
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Zip
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Adplexity
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Tracker Integration
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Basic Tracking
+                                <sup class="i-table">i</sup>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Cleaning and Customization Service
+                                <sup class="i-table">i</sup>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From URL
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Management Integrations
+                                <sup class="i-table">i</sup>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Advanced Tracking
+                                <sup class="i-table">i</sup>
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Health Checker
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile+tablet -->
+                <div class="pricing-section-container-mobile padding-16 padding-32">
+                    <div class="pricing-section-co-01">
+                        <div class="pricing-section-co-choose">
+                            <span class="pricing-section-co-choose0-01">Monthly</span>
+                            <span class="pricing-section-co-choose-02">Yearly</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-section-co-01-container">
+                        <div class="pr pricing-section-container-same">
+                            <div class="pricing-section-container-same-02">
+                                $69
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20/mo
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Published Landers
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">10</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Capturing Widgets
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">1</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                A/B Testing
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">1</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Unlimited Traffic & Leads
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Management
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Templates
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Zip
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Adplexity
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Tracker Integration
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Basic Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Cleaning & Customization Service
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From URL
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Management Integrations
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Advanced Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Health Checker
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-section-co-01-container">
+                        <div class="pr pricing-section-container-same pr02">
+                            <div class="pricing-section-container-same-02 psc2">
+                                $69
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20/mo
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs01">
+                                <a href="" class="pricing-section-container-footer ">Start Free Trial</a>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Published Landers
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">50</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Capturing Widgets
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">5</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                A/B Testing
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">5</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Unlimited Traffic & Leads
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Management
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Templates
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Zip
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Adplexity
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Tracker Integration
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Basic Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Cleaning & Customization Service
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Management Integrations
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Advanced Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Health Checker
+                            </div>
+                            <div class="widthrow pricing-section-container-cell04">
+                                --
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pricing-section-co-01-container">
+                        <div class="pr pricing-section-container-same">
+                            <div class="pricing-section-container-same-02">
+                                $104
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $40
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Published Landers
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">200</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Capturing Widgets
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">20</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                A/B Testing
+                            </div>
+                            <div class="widthrow pricing-section-container-cell02">20</div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Unlimited Traffic & Leads
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Management
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Templates
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Zip
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From Adplexity
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Tracker Integration
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Basic Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Cleaning & Customization Service
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Import From URL
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Lead Management Integrations
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Advanced Tracking
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pricing-section-container-row">
+                            <div class="widthrow pricing-section-container-cell01">
+                                Domain Health Checker
+                            </div>
+                            <div class="widthrow pricing-section-container-cell03">
+                                <div class="check-table">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="footer">
-
+            <div class="footer-team mt-120 padding-16 padding-32">
+                <img src="https://landerlab.io/static%2Fimg%2F2ad27682fb8fe455d9b0.svg" alt="" class="footer-img">
+                <div class="footer-container">
+                    <a href="" class="footer-container-a">About</a>
+                    <a href="" class="footer-container-a">Terms of Service</a>
+                    <a href="" class="footer-container-a">Privacy Policy</a>
+                    <a href="" class="footer-container-a">Refund Policy</a>
+                    <a href="" class="footer-container-a">Templates</a>
+                    <a href="" class="footer-container-a">Prices</a>
+                </div>
+                <div class="footer-footer">
+                    <div class="footer-footer-01">
+                        © LanderLab. All Rights Reserved
+                    </div>
+                    <div class="footer-footer-02">
+                        Follow us on:
+                        <a href="" class="footer-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="" class="footer-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="footer-icon">
+                            <i class="fab fa-invision"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+
+    <div class="model">
+        <div class="model-menu">
+            <div class="moder-menu-icon">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="moder-menu-container">
+                <ul class="moder-menu-mb-tl">
+                    <li><a href="#features" class="a-text js-menu-a">Features</a></li>
+                    <li><a href="#templates" class="a-text js-menu-a">Templates</a></li>
+                    <li><a href="#pricing" class="a-text js-menu-a">Pricing</a></li>
+                </ul>
+                <ul class="model-menu-login-signup">
+                    <li><a href="" class="a-text a-text-signup login-sign js-menu-a">Sign Up</a></li>
+                    <li><a href="" class="a-text login-sign model-mobi js-menu-a">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const openMenu = document.querySelector('.js-open-menu')
+        const model = document.querySelector('.model')
+        const model_Close = document.querySelector('.moder-menu-icon')
+        const modelContainer = document.querySelector('.model-menu')
+        const closeMenus = document.querySelectorAll('.js-menu-a')
+
+        function showMenuMT() {
+            model.classList.add('open')
+        }
+        openMenu.addEventListener('click', showMenuMT)
+
+        function closeMenuMT() {
+            model.classList.remove('open')
+        }
+        model_Close.addEventListener('click', closeMenuMT)
+
+        modelContainer.addEventListener('click', function(event){
+            event.stopPropagation()
+        })
+
+        for(const closeMenu of closeMenus){
+            closeMenu.addEventListener('click', closeMenuMT)
+        }
+    </script>
+
+<!-- Đổi màu chữ chạy chạy -->
+    <script>
+        consoleText(['RESPONSIVE.', 'BEAUTIFUL', 'FAST', 'CONVERTING'], 'text', ['#FF66CC', '#0066FF', '#990099', '#FF6666']);
+
+        function consoleText(words, id, colors) {
+            if (colors === undefined) colors = ['#fff'];
+            var visible = true;
+            var con = document.getElementById('console');
+            var letterCount = 1;
+            var x = 1;
+            var waiting = false;
+            var target = document.getElementById(id)
+            target.setAttribute('style', 'color:' + colors[0])
+            window.setInterval(function () {
+
+                if (letterCount === 0 && waiting === false) {
+                    waiting = true;
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    window.setTimeout(function () {
+                        var usedColor = colors.shift();
+                        colors.push(usedColor);
+                        var usedWord = words.shift();
+                        words.push(usedWord);
+                        x = 1;
+                        target.setAttribute('style', 'color:' + colors[0])
+                        letterCount += x;
+                        waiting = false;
+                    }, 2)
+                } else if (letterCount === words[0].length + 1 && waiting === false) {
+                    waiting = true;
+                    window.setTimeout(function () {
+                        x = -1;
+                        letterCount += x;
+                        waiting = false;
+                    }, 1000)
+                } else if (waiting === false) {
+                    target.innerHTML = words[0].substring(0, letterCount)
+                    letterCount += x;
+                }
+            }, 90)
+            window.setInterval(function () {
+                if (visible === true) {
+                    con.className = 'console-underscore hidden'
+                    visible = false;
+
+                } else {
+                    con.className = 'console-underscore'
+
+                    visible = true;
+                }
+            }, 300)
+        }
+    </script>
 </body>
 </html>
