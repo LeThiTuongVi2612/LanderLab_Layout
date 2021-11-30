@@ -564,8 +564,8 @@ html{
     font-weight: 700;
     font-size: 18px;
     background: rgba(181,184,209,.3);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -573,19 +573,30 @@ html{
 }
 
 .pricing-section-co-choose{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
     
 }
 
 .pricing-section-co-choose0-01{
-    padding: 8px 24px;
+    margin: 2px;
+    padding: 8px;
     cursor: pointer;
+    width: 50%;
+    text-align: center;
     /* background-color: #a053c5; */
     border-radius: 50px;
     color: #707387;
 }
 
 .pricing-section-co-choose-02{
-    padding: 8px 32px;
+    margin: 2px;
+    width: 50%;
+    padding: 8px;
+    text-align: center;
+    /* padding: 8px 32px; */
     color: #a053c5;
     background-color: #fff;
     border-radius: 50px;
