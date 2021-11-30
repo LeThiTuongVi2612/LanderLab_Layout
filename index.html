@@ -38,7 +38,7 @@
         </div>
 
         <div class="container">
-            <div class="home-section mt-16 padding-32">
+            <div class="home-section mt-16 padding-32" id="about">
                 <div class="home-section-01">
                     <div class="home-section-header-01">
                         Build <div class='console-container'>
@@ -281,20 +281,20 @@
                 </div>
                 <div class="pricing-section-container mt-120">
                     <div class="pricing-section-container-con">
-                        <div class="pr pricing-section-container-same">
+                        <div class="pr pricing-section-container-same" id="btn-chuyen">
                             <div class="pricing-section-co-01">
                                 <div class="pricing-section-co-choose">
-                                    <span class="pricing-section-co-choose0-01">Monthly</span>
-                                    <span class="pricing-section-co-choose-02">Yearly</span>
+                                    <span class="pricing-section-co-choose0-01 " id="btn01">Monthly</span>
+                                    <span class="pricing-section-co-choose-02 " id="btn02">Yearly</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="pr pricing-section-container-same">
+                        <div class="pr pricing-section-container-same" id="content-01">
                             <div class="pricing-section-container-same-01 psc1">
                                 Starter
                             </div>
                             <div class="pricing-section-container-same-02">
-                                $69
+                                $49
                                 <span class="pricing">/mo</span>
                             </div>
                             <div class="pricing-section-container-same-03">
@@ -304,12 +304,12 @@
                                 <a href="" class="pricing-section-container-footer">Start Free Trial</a>
                             </div>
                         </div>
-                        <div class="pr pricing-section-container-same pr02">
+                        <div class="pr pricing-section-container-same pr02" id="content-02">
                             <div class="pricing-section-container-same-01 psc2">
                                 Pro
                             </div>
                             <div class="pricing-section-container-same-02">
-                                $89
+                                $69
                                 <span class="pricing">/mo</span>
                             </div>
                             <div class="pricing-section-container-same-03">
@@ -319,12 +319,12 @@
                                 <a href="" class="pricing-section-container-footer">Start Free Trial</a>
                             </div>
                         </div>
-                        <div class="pr pricing-section-container-same">
+                        <div class="pr pricing-section-container-same" id="content-03">
                             <div class="pricing-section-container-same-01 psc3">
                                 Master
                             </div>
                             <div class="pricing-section-container-same-02">
-                                $149
+                                $109
                                 <span class="pricing">/mo</span>
                             </div>
                             <div class="pricing-section-container-same-03">
@@ -597,20 +597,20 @@
                 <div class="pricing-section-container-mobile padding-16 padding-32">
                     <div class="pricing-section-co-01">
                         <div class="pricing-section-co-choose">
-                            <span class="pricing-section-co-choose0-01">Monthly</span>
-                            <span class="pricing-section-co-choose-02">Yearly</span>
+                            <span class="pricing-section-co-choose0-01" id="btn03">Monthly</span>
+                            <span class="pricing-section-co-choose-02" id="btn04">Yearly</span>
                         </div>
                     </div>
 
-                    <div class="pricing-section-co-01-container">
-                        <div class="pr pricing-section-container-same">
+                    <div class="pricing-section-co-01-container ">
+                        <div class="pr pricing-section-container-same" id="contact04">
                             <div class="pricing-section-container-same-02">
-                                $69
+                                $49
                             </div>
                             <div class="pricing-section-container-same-03">
                                 Save $20/mo
                             </div>
-                            <div class="pricing-section-container-same-04 prscs">
+                            <div class="pricing-section-container-same-04 prscs" >
                                 <a href="" class="pricing-section-container-footer">Start Free Trial</a>
                             </div>
                         </div>
@@ -747,7 +747,7 @@
                     </div>
 
                     <div class="pricing-section-co-01-container">
-                        <div class="pr pricing-section-container-same pr02">
+                        <div class="pr pricing-section-container-same pr02" id="contact05">
                             <div class="pricing-section-container-same-02 psc2">
                                 $69
                             </div>
@@ -884,14 +884,14 @@
                     </div>
 
                     <div class="pricing-section-co-01-container">
-                        <div class="pr pricing-section-container-same">
+                        <div class="pr pricing-section-container-same" id="contact06">
                             <div class="pricing-section-container-same-02">
                                 $104
                             </div>
                             <div class="pricing-section-container-same-03">
                                 Save $40
                             </div>
-                            <div class="pricing-section-container-same-04 prscs">
+                            <div class="pricing-section-container-same-04 prscs" >
                                 <a href="" class="pricing-section-container-footer">Start Free Trial</a>
                             </div>
                         </div>
@@ -1042,12 +1042,12 @@
             <div class="footer-team mt-120 padding-16 padding-32">
                 <img src="https://landerlab.io/static%2Fimg%2F2ad27682fb8fe455d9b0.svg" alt="" class="footer-img">
                 <div class="footer-container">
-                    <a href="" class="footer-container-a">About</a>
+                    <a href="#about" class="footer-container-a">About</a>
                     <a href="" class="footer-container-a">Terms of Service</a>
                     <a href="" class="footer-container-a">Privacy Policy</a>
                     <a href="" class="footer-container-a">Refund Policy</a>
-                    <a href="" class="footer-container-a">Templates</a>
-                    <a href="" class="footer-container-a">Prices</a>
+                    <a href="#templates" class="footer-container-a">Templates</a>
+                    <a href="#pricing" class="footer-container-a">Prices</a>
                 </div>
                 <div class="footer-footer">
                     <div class="footer-footer-01">
@@ -1172,6 +1172,189 @@
                 }
             }, 300)
         }
+    </script>
+
+    <!-- Thay đổi nội dung khi bấm nút pc -->
+    <script>
+        const btn_01 = document.getElementById('btn01')
+        const btn_02 = document.getElementById('btn02')
+        const div_01 = document.getElementById('content-01')
+        const div_02 = document.getElementById('content-02')
+        const div_03 = document.getElementById('content-03')
+        const tong = document.getElementById('btn-chuyen')
+
+        function doi01(){
+            btn_01.classList.add('pricing-section-co-choose0-02')
+            btn_02.classList.add('pricing-section-co-choose-01')
+        }
+        function doi02(){
+            btn_01.classList.remove('pricing-section-co-choose0-02')
+            btn_02.classList.remove('pricing-section-co-choose-01')
+        }
+        btn_01.addEventListener('click', doi01)
+        btn_02.addEventListener('click', doi02)
+
+
+
+        // thiết lập click cho btn_01
+        btn_01.onclick = function(){
+            div_01.innerHTML = `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $69
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+            div_02.innerHTML =  `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $89
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs01 prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+            div_03.innerHTML = `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $149
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+        };
+
+        // thiết lập click cho btn_02
+        btn_02.onclick = function(){
+            div_01.innerHTML = `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $49
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+
+            div_02.innerHTML = `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $69
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs01 prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+            div_03.innerHTML = `<div class="pricing-section-container-same-01 psc1">
+                                Starter
+                            </div>
+                            <div class="pricing-section-container-same-02">
+                                $109
+                                <span class="pricing">/mo</span>
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20 per month
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding">
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+        }
+
+    </script>
+
+    <!--Thay đổi nội dung khi bấm nút tablet + mobile  -->
+    <script>
+        const btn_03 = document.getElementById('btn03')
+        const btn_04 = document.getElementById('btn04')
+        const contact_04 = document.getElementById('contact04')
+        const contact_05 = document.getElementById('contact05')
+        const contact_06 = document.getElementById('contact06')
+        const width50 = document.getElementById('width50')
+        
+        function doi03(){
+            btn_03.classList.add('pricing-section-co-choose0-02')
+            btn_04.classList.add('pricing-section-co-choose-01')
+            
+        }
+        function doi04(){
+            btn_03.classList.remove('pricing-section-co-choose0-02')
+            btn_04.classList.remove('pricing-section-co-choose-01')
+            
+        }
+        btn_03.addEventListener('click', doi03)
+        btn_04.addEventListener('click', doi04)
+
+        btn_03.onclick =function(){
+            contact_04.innerHTML = `<div class="pricing-section-container-same-02">
+                                $69
+                            </div>
+                           
+                            <div class="pricing-section-container-same-04 prscs width-50 prspadding" >
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+            contact_05.innerHTML = `<div class="pricing-section-container-same-02 psc2">
+                                $89
+                            </div>
+                            
+                            <div class="pricing-section-container-same-04 prscs01 width-50 prspadding" >
+                                <a href="" class="pricing-section-container-footer ">Start Free Trial</a>
+                            </div>`
+            contact_06.innerHTML = `<div class="pricing-section-container-same-02">
+                                $149
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $40
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs width-50 prspadding" >
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+        };
+
+        btn_04.onclick = function(){
+            contact_04.innerHTML = `<div class="pricing-section-container-same-02">
+                                $49
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20/mo
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding" >
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+            contact_05.innerHTML = `<div class="pricing-section-container-same-02 psc2">
+                                $69
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $20/mo
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs01 prspadding" >
+                                <a href="" class="pricing-section-container-footer ">Start Free Trial</a>
+                            </div>
+                            `
+            contact_06.innerHTML = `<div class="pricing-section-container-same-02">
+                                $104
+                            </div>
+                            <div class="pricing-section-container-same-03">
+                                Save $40
+                            </div>
+                            <div class="pricing-section-container-same-04 prscs prspadding" >
+                                <a href="" class="pricing-section-container-footer">Start Free Trial</a>
+                            </div>`
+        }
+
     </script>
 </body>
 </html>
